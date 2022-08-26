@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="XOXTable">
+            
+            <h1 style="text-align: center; font-size: 2em; color: white;" id="turnH1"> <span style="color: green;">X</span>'s turn</h1>
+            <div class="XoxRow">
+                <div class="cell" id="c1" onclick="putXO('c1')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c2" onclick="putXO('c2')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c3" onclick="putXO('c3')"><h1 class="gameArea"></h1></div>
+            </div>
+            <div class="XoxRow">
+                <div class="cell" id="c4" onclick="putXO('c4')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c5" onclick="putXO('c5')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c6" onclick="putXO('c6')"><h1 class="gameArea"></h1></div>
+            </div>
+            <div class="XoxRow"> 
+                <div class="cell" id="c7" onclick="putXO('c7')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c8" onclick="putXO('c8')"><h1 class="gameArea"></h1></div>
+                <div class="cell" id="c9" onclick="putXO('c9')"><h1 class="gameArea"></h1></div>
+            </div>
+            <h1 id="wonText" style="display: none;"> <span style="color: green;"></span> won </h1>
+            <h1 id="noWinnerText" style="display: none;"> No Winner </h1>
+            <center>
+            <input class="resBut" type="button" value="reset" onclick="reset()"> 
+            </center>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
